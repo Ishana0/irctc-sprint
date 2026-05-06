@@ -141,10 +141,6 @@ Occurs very frequently on mobile browsers during ticket booking and train search
 9. User accidentally taps wrong areas or closes the calendar unintentionally
 10. Train search flow becomes frustrating and slow
 
-## Screenshot or description
-
-Screenshot attached: `assets/screenshots/irctc-mobile.png`
-
 The calendar popup overlaps nearby UI elements and partially blocks the lower section of the booking form. Floating advertisement widgets further reduce usable screen space, making date selection difficult on mobile devices.
 
 ## Where exactly it breaks
@@ -186,10 +182,6 @@ Occurs every time users check PNR details because the missing information is not
 9. No live running status or contextual travel updates are shown
 10. User must open another website or NTES separately to check real-time updates
 
-## Screenshot or description
-
-Screenshot attached: `assets/screenshots/pnr-information-gap.png`
-
 The PNR enquiry page only contains a basic PNR input field and booking status functionality. There is no visible integration for platform number, live running status, delay alerts, or coach positioning information.
 
 ## Where exactly it breaks
@@ -230,10 +222,6 @@ Occurs whenever users attempt to understand refund eligibility or file a TDR req
 8. User struggles to understand TDR eligibility and timelines
 9. User files a TDR request with uncertainty
 10. No progress tracker or real-time status updates are provided afterward
-
-## Screenshot or description
-
-Screenshot attached: `assets/screenshots/tdr-refund-rules.png`
 
 The Refund Rules page opens as a long PDF document containing complex legal-style text and policy tables without simplified explanations, visual guidance, or user-friendly navigation.
 
