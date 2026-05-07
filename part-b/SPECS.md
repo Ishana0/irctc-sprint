@@ -395,3 +395,77 @@ Introduce a guided refund assistant that explains refund eligibility step-by-ste
 - Backend processing delays
 
 ---
+
+# Peer Review Updates
+
+## Overview
+
+The top two feature specifications presented during peer review were:
+
+1. Tatkal Smart Queue System
+2. Responsive Mobile Booking Experience
+
+Feedback focused on scalability, accessibility, fallback behavior, and handling edge-case failures during peak booking traffic.
+
+---
+
+## Update 1 — Tatkal Smart Queue System
+
+### Feedback Received
+
+Reviewers raised concerns about what happens if the queue system itself crashes or if users lose internet connectivity while waiting in the queue.
+
+### Changes Added
+
+- Added temporary queue recovery support using session-based restoration
+- Added auto-reconnect handling for interrupted mobile internet sessions
+- Added fallback booking mode if live queue services fail completely
+
+### Updated Edge Cases
+
+Additional edge cases added:
+- Queue session expiration
+- Duplicate queue entries from multiple tabs
+- Mobile browser refresh during waiting period
+
+### Updated Success Metrics
+
+New metric added:
+- Reduce duplicate queue refresh attempts by 80%
+
+---
+
+## Update 2 — Responsive Mobile Booking Experience
+
+### Feedback Received
+
+Reviewers pointed out accessibility concerns for elderly users and users with smaller screen devices.
+
+### Changes Added
+
+- Increased minimum touch target sizes for buttons and date selection
+- Added accessibility-friendly spacing and simplified interaction zones
+- Reduced floating widget interference during booking flow
+
+### Updated Technical Plan
+
+New frontend improvements added:
+- Adaptive mobile spacing system
+- Dynamic keyboard-aware form adjustments
+- Mobile accessibility testing for low-resolution devices
+
+### Updated Success Metrics
+
+New metrics added:
+- Reduce accidental mobile taps by 60%
+- Improve mobile task completion speed
+
+---
+
+## Matrix Reconsideration
+
+Based on peer review feedback, the Responsive Mobile Booking Experience feature was confirmed as a stronger “High Impact / Low Effort” solution because it improves usability across multiple booking flows without requiring major backend infrastructure changes.
+
+The Tatkal Smart Queue System remained in the “High Impact / High Effort” quadrant due to infrastructure complexity and scalability requirements during peak booking traffic.
+
+---
